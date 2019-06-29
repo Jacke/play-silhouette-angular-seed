@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/Jacke/play-silhouette-angular-seed#readme",
   "dependencies": {
+    "axios": "^0.19.0",
     "webpack": "^4.35.0",
     "webpack-cli": "^3.3.5"
   }
