@@ -1,0 +1,26 @@
+{
+  "name": "play-silhouette-angular-seed",
+  "version": "1.0.0",
+  "description": "Silhouette Seed Template =====================================",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jacke/play-silhouette-angular-seed.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jacke/play-silhouette-angular-seed/issues"
+  },
+  "homepage": "https://github.com/Jacke/play-silhouette-angular-seed#readme",
+  "dependencies": {
+    "webpack": "^4.35.0",
+    "webpack-cli": "^3.3.5"
+  }
+}

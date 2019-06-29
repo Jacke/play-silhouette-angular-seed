@@ -154,3 +154,20 @@ java.lang.NullPointerException
 	at scala.meta.internal.pc.HoverProvider.seenFromType(HoverProvider.scala:106)
 	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:42)
 
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/User.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/AuthToken.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/services/AuthTokenService.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/services/AuthTokenServiceImpl.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/services/UserService.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/services/UserServiceImpl.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/daos/AuthTokenDAOImpl.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/AuthToken.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/User.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/project/plugins.sbt
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/project/plugins.sbt
+WARN  no build target: 
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/project/plugins.sbt
+INFO  skipping build import with status 'Dismissed'
+WARN  no build target: 
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/build.sbt
+WARN  no build target: 
