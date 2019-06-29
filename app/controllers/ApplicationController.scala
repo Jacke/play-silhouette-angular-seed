@@ -7,8 +7,8 @@ import com.mohiva.play.silhouette.api.{ LogoutEvent, Silhouette }
 import org.webjars.play.WebJarsUtil
 import play.api.i18n.I18nSupport
 import play.api.mvc.{ AbstractController, AnyContent, ControllerComponents }
+import play.api.libs.json._
 import utils.auth.DefaultEnv
-
 import scala.concurrent.Future
 
 /**
@@ -46,5 +46,11 @@ class ApplicationController @Inject() (
     val result = Redirect(routes.ApplicationController.index())
     silhouette.env.eventBus.publish(LogoutEvent(request.identity, request))
     silhouette.env.authenticatorService.discard(request.authenticator, result)
+  }
+
+  def colors = silhouette.SecuredAction.async { implicit request =>
+    Future.successful(
+      Ok(Json.toJson(Json.obj(
+        "colors" -> Json.arr(s"email: ${request.identity.email}", "black", "blue", "green", "red", "white")))))
   }
 }

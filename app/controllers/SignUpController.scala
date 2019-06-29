@@ -12,7 +12,10 @@ import forms.SignUpForm
 import models.User
 import models.services.{ AuthTokenService, UserService }
 import org.webjars.play.WebJarsUtil
+import forms.{ CredentialFormat, Token }
+
 import play.api.i18n.{ I18nSupport, Messages }
+import play.api.libs.json._
 import play.api.libs.mailer.{ Email, MailerClient }
 import play.api.mvc.{ AbstractController, AnyContent, ControllerComponents, Request }
 import utils.auth.DefaultEnv
@@ -64,56 +67,63 @@ class SignUpController @Inject() (
    *
    * @return The result to display.
    */
-  def submit = silhouette.UnsecuredAction.async { implicit request: Request[AnyContent] =>
-    SignUpForm.form.bindFromRequest.fold(
-      form => Future.successful(BadRequest(views.html.signUp(form))),
-      data => {
-        val result = Redirect(routes.SignUpController.view()).flashing("info" -> Messages("sign.up.email.sent", data.email))
-        val loginInfo = LoginInfo(CredentialsProvider.ID, data.email)
+  def submit = Action.async(parse.json) { implicit request =>
+    request.body
+      .validate[SignUpForm.Data]
+      .map { signUp =>
+        val loginInfo = LoginInfo(CredentialsProvider.ID, signUp.email)
         userService.retrieve(loginInfo).flatMap {
-          case Some(user) =>
-            val url = routes.SignInController.view().absoluteURL()
-            mailerClient.send(Email(
-              subject = Messages("email.already.signed.up.subject"),
-              from = Messages("email.from"),
-              to = Seq(data.email),
-              bodyText = Some(views.txt.emails.alreadySignedUp(user, url).body),
-              bodyHtml = Some(views.html.emails.alreadySignedUp(user, url).body)
-            ))
-
-            Future.successful(result)
           case None =>
-            val authInfo = passwordHasherRegistry.current.hash(data.password)
+            /* user not already exists */
+            val decorateFLname: Option[String] => String = n => n.getOrElse("")
             val user = User(
-              userID = UUID.randomUUID(),
-              loginInfo = loginInfo,
-              firstName = Some(data.firstName),
-              lastName = Some(data.lastName),
-              fullName = Some(data.firstName + " " + data.lastName),
-              email = Some(data.email),
-              avatarURL = None,
-              activated = false
-            )
+              java.util.UUID.randomUUID(),
+              loginInfo,
+              Some(signUp.firstName),
+              Some(signUp.lastName),
+              Some(signUp.firstName + " " + signUp.lastName),
+              Some(signUp.email),
+              None,
+              true)
+            // val plainPassword = UUID.randomUUID().toString.replaceAll("-", "")
+            val authInfo = passwordHasherRegistry.current.hash(signUp.password)
             for {
-              avatar <- avatarService.retrieveURL(data.email)
-              user <- userService.save(user.copy(avatarURL = avatar))
+              avatar <- avatarService.retrieveURL(signUp.email)
+              userToSave <- userService.save(user.copy(avatarURL = avatar))
               authInfo <- authInfoRepository.add(loginInfo, authInfo)
-              authToken <- authTokenService.create(user.userID)
+              authenticator <- silhouette.env.authenticatorService.create(
+                loginInfo)
+              token <- silhouette.env.authenticatorService.init(authenticator)
+              result <- silhouette.env.authenticatorService.embed(
+                token,
+                Ok(
+                  Json.toJson(
+                    Token(
+                      token = token,
+                      expiresOn = authenticator.expirationDateTime))))
             } yield {
-              val url = routes.ActivateAccountController.activate(authToken.id).absoluteURL()
+              val url =
+                routes.ApplicationController.index().absoluteURL()
               mailerClient.send(Email(
                 subject = Messages("email.sign.up.subject"),
                 from = Messages("email.from"),
-                to = Seq(data.email),
+                to = Seq(user.email.get),
                 bodyText = Some(views.txt.emails.signUp(user, url).body),
                 bodyHtml = Some(views.html.emails.signUp(user, url).body)
               ))
-
               silhouette.env.eventBus.publish(SignUpEvent(user, request))
+              silhouette.env.eventBus.publish(LoginEvent(user, request))
               result
             }
+          case Some(_) =>
+            /* user already exists! */
+            Future(Conflict(Json.toJson("user already exists")))
         }
       }
-    )
+      .recoverTotal {
+        case error =>
+          Future.successful(
+            BadRequest(Json.toJson(JsError.toJson(error))))
+      }
   }
 }

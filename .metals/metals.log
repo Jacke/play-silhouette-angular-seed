@@ -1,0 +1,126 @@
+INFO  time: initialize in 0.55s
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala
+INFO  no build target: using presentation compiler with only scala-library
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/modules/BaseModule.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/modules/JobModule.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/utils/auth/Env.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/utils/auth/Env.scala
+INFO  time: initialize in 0.34s
+INFO  skipping build import with status 'Requested'
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignInController.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignUpController.scala
+INFO  no build target: using presentation compiler with only scala-library
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignInController.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/utils/auth/Env.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala' because it doesn't belong to a build target.
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala' because it doesn't belong to a build target.
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala' because it doesn't belong to a build target.
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala' because it doesn't belong to a build target.
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/controllers/ApplicationController.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/controllers/ApplicationController.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/controllers/ApplicationController.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/controllers/ApplicationController.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/controllers/ApplicationController.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignUpController.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignUpController.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/forms/SignUpForm.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignUpController.scala
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignUpController.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignUpController.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignUpController.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignUpController.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/forms/SignUpForm.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/forms/SignUpForm.scala' because it doesn't belong to a build target.
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/forms/SignUpForm.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignUpController.scala
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignUpController.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignUpController.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/controllers/ApplicationController.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/controllers/ApplicationController.scala' because it doesn't belong to a build target.
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignUpController.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignUpController.scala
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignUpController.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignUpController.scala' because it doesn't belong to a build target.
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignUpController.scala
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignUpController.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignUpController.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignUpController.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignUpController.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignUpController.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignUpController.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignUpController.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignUpController.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignUpController.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignUpController.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignUpController.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignUpController.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignUpController.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignUpController.scala' because it doesn't belong to a build target.
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignUpController.scala
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignUpController.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignUpController.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignUpController.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignUpController.scala' because it doesn't belong to a build target.
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignUpController.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignUpController.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignUpController.scala
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignUpController.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignUpController.scala' because it doesn't belong to a build target.
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignUpController.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignUpController.scala
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/forms/SignUpForm.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/forms/SignUpForm.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/forms/SignUpForm.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/forms/SignUpForm.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/forms/SignUpForm.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/forms/SignUpForm.scala' because it doesn't belong to a build target.
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/forms/SignUpForm.scala
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignUpController.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignUpController.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignUpController.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignUpController.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignUpController.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignUpController.scala' because it doesn't belong to a build target.
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignUpController.scala
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/forms/SignUpForm.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/forms/SignUpForm.scala' because it doesn't belong to a build target.
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/forms/SignUpForm.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignUpController.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignUpController.scala
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignUpController.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignUpController.scala' because it doesn't belong to a build target.
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignUpController.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignUpController.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignUpController.scala
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignUpController.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignUpController.scala' because it doesn't belong to a build target.
+Jun 29, 2019 5:05:50 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 700
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala' because it doesn't belong to a build target.
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala' because it doesn't belong to a build target.
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala

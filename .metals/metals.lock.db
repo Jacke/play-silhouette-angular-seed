@@ -1,0 +1,6 @@
+#FileLock
+#Sat Jun 29 15:24:18 MSK 2019
+hostName=192.168.1.69
+id=16ba33180c4cc6ac2ada8c46c4c74543a2c6f4ca7a1
+method=file
+server=192.168.1.69\:53323

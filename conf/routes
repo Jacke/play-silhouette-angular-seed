@@ -5,6 +5,7 @@
 # Home page
 GET         /                                controllers.ApplicationController.index
 GET         /signOut                         controllers.ApplicationController.signOut
+GET         /colors                          controllers.ApplicationController.colors
 GET         /authenticate/:provider          controllers.SocialAuthController.authenticate(provider)
 
 GET         /signUp                          controllers.SignUpController.view
