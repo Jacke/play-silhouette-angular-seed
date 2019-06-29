@@ -7,6 +7,8 @@ name := "play-silhouette-seed"
 version := "6.0.0"
 
 scalaVersion := "2.12.8"
+val playMailerVersion = "6.0.1"
+val slickVersion = "3.3.2"
 
 resolvers += Resolver.jcenterRepo
 
@@ -14,6 +16,12 @@ resolvers += "Sonatype snapshots" at "https://oss.sonatype.org/content/repositor
 
 libraryDependencies ++= Seq(
   "com.mohiva" %% "play-silhouette" % "6.0.0",
+  "com.typesafe.play" %% "play-slick" % "4.0.2",
+  "com.typesafe.play" %% "play-slick-evolutions" % "4.0.2",
+  "com.byteslounge" %% "slick-repo" % "1.5.2",
+  "io.github.nafg" %% "slick-migration-api" % "0.4.4",
+  "mysql" % "mysql-connector-java" % "8.0.15",
+
   "com.mohiva" %% "play-silhouette-password-bcrypt" % "6.0.0",
   "com.mohiva" %% "play-silhouette-persistence" % "6.0.0",
   "com.mohiva" %% "play-silhouette-crypto-jca" % "6.0.0",
