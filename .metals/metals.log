@@ -172,3 +172,260 @@ WARN  no build target:
 WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/build.sbt
 WARN  no build target: 
 WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/build.sbt
+INFO  shutting down Metals
+INFO  time: initialize in 0.32s
+INFO  skipping build import with status 'Requested'
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/build.sbt
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala
+INFO  no build target: using presentation compiler with only scala-library
+Jul 02, 2019 8:08:28 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.seenFromType(HoverProvider.scala:106)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:42)
+
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala' because it doesn't belong to a build target.
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/daos/UserDAO.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/daos/UserDAOImpl.scala
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/models/daos/UserDAOImpl.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/models/daos/UserDAOImpl.scala' because it doesn't belong to a build target.
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/daos/UserDAOImpl.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/utils/DBImplicits.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/utils/DBImplicits.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/daos/DaoSlick.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/daos/DaoSlick.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/daos/DatabaseComponent.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/daos/DatabaseComponent.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/daos/DBTableDefinitions.scala
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/models/daos/DBTableDefinitions.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/models/daos/DBTableDefinitions.scala' because it doesn't belong to a build target.
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/daos/DBTableDefinitions.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/daos/OAuth2InfoDAO.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/daos/OAuth2InfoDAO.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/daos/PasswordInfoDAOImpl.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/daos/PasswordInfoDAOImpl.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/daos/UserDAOImpl.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/daos/UserDAOImpl.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/daos/DBTableDefinitions.scala
+something's wrong: no file:///Users/stan/Dev/play-silhouette-angular-seed/app/models/daos/DBTableDefinitions.scala in Option[String]RangePosition(file:///Users/stan/Dev/play-silhouette-angular-seed/app/models/daos/DBTableDefinitions.scala, 412, 412, 426)
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/daos/DBTableDefinitions.scala
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/models/daos/UserDAOImpl.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/models/daos/UserDAOImpl.scala' because it doesn't belong to a build target.
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/daos/UserDAOImpl.scala
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/models/daos/UserDAOImpl.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/models/daos/UserDAOImpl.scala' because it doesn't belong to a build target.
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/services/UserService.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/services/UserService.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/services/UserServiceImpl.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/services/UserServiceImpl.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/daos/UserDAO.scala
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/models/daos/UserDAO.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/models/daos/UserDAO.scala' because it doesn't belong to a build target.
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/daos/UserDAO.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/daos/UserDAO.scala
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala' because it doesn't belong to a build target.
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala' because it doesn't belong to a build target.
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/models/daos/UserDAO.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/models/daos/UserDAO.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/models/services/UserServiceImpl.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/models/services/UserServiceImpl.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/models/services/UserServiceImpl.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/models/services/UserServiceImpl.scala' because it doesn't belong to a build target.
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/services/UserServiceImpl.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/services/UserServiceImpl.scala
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/models/services/UserService.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/models/services/UserService.scala' because it doesn't belong to a build target.
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/services/UserService.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/services/UserService.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/daos/UserDAO.scala
+Jul 02, 2019 9:22:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.IllegalArgumentException: -1 is not a valid offset, allowed [0..0]
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: -1 is not a valid offset, allowed [0..0]
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:647)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:632)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:474)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1977)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:38)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:36)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: -1 is not a valid offset, allowed [0..0]
+	at scala.meta.internal.inputs.InternalInput.offsetToLine(InternalInput.scala:41)
+	at scala.meta.internal.inputs.InternalInput.offsetToLine$(InternalInput.scala:35)
+	at scala.meta.inputs.Input$VirtualFile.offsetToLine(Input.scala:74)
+	at scala.meta.inputs.Position$Range.startLine(Position.scala:37)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLsp.toLSP(MtagsEnrichments.scala:298)
+	at scala.meta.internal.metals.TokenEditDistance.toRevised(TokenEditDistance.scala:126)
+	at scala.meta.internal.metals.FoldingRangeExtractor.extractFrom(FoldingRangeExtractor.scala:33)
+	at scala.meta.internal.metals.FoldingRangeExtractor.$anonfun$extractFrom$2(FoldingRangeExtractor.scala:51)
+	at scala.meta.internal.metals.FoldingRangeExtractor.$anonfun$extractFrom$2$adapted(FoldingRangeExtractor.scala:46)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.meta.internal.metals.FoldingRangeExtractor.extractFrom(FoldingRangeExtractor.scala:46)
+	at scala.meta.internal.metals.FoldingRangeExtractor.$anonfun$extractFrom$2(FoldingRangeExtractor.scala:51)
+	at scala.meta.internal.metals.FoldingRangeExtractor.$anonfun$extractFrom$2$adapted(FoldingRangeExtractor.scala:46)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.meta.internal.metals.FoldingRangeExtractor.extractFrom(FoldingRangeExtractor.scala:46)
+	at scala.meta.internal.metals.FoldingRangeExtractor.$anonfun$extractFrom$2(FoldingRangeExtractor.scala:51)
+	at scala.meta.internal.metals.FoldingRangeExtractor.$anonfun$extractFrom$2$adapted(FoldingRangeExtractor.scala:46)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.meta.internal.metals.FoldingRangeExtractor.extractFrom(FoldingRangeExtractor.scala:46)
+	at scala.meta.internal.metals.FoldingRangeExtractor.extract(FoldingRangeExtractor.scala:25)
+	at scala.meta.internal.metals.FoldingRangeProvider.$anonfun$getRangedFor$1(FoldingRangeProvider.scala:24)
+	at scala.Option.map(Option.scala:163)
+	at scala.meta.internal.metals.FoldingRangeProvider.getRangedFor(FoldingRangeProvider.scala:20)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$foldingRange$1(MetalsLanguageServer.scala:966)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:24)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:658)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/daos/UserDAOImpl.scala
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/models/services/UserServiceImpl.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/models/services/UserServiceImpl.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/models/services/UserServiceImpl.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/models/services/UserServiceImpl.scala' because it doesn't belong to a build target.
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/User.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/User.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/User.scala
+something's wrong: no file:///Users/stan/Dev/play-silhouette-angular-seed/app/models/User.scala in Option[String]RangePosition(file:///Users/stan/Dev/play-silhouette-angular-seed/app/models/User.scala, 757, 757, 771)
+something's wrong: no file:///Users/stan/Dev/play-silhouette-angular-seed/app/models/User.scala in Option[Long]RangePosition(file:///Users/stan/Dev/play-silhouette-angular-seed/app/models/User.scala, 658, 658, 670)
+something's wrong: no file:///Users/stan/Dev/play-silhouette-angular-seed/app/models/User.scala in Option[Long]RangePosition(file:///Users/stan/Dev/play-silhouette-angular-seed/app/models/User.scala, 658, 658, 670)
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/User.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/services/UserServiceImpl.scala
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/models/daos/DBTableDefinitions.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/models/daos/DBTableDefinitions.scala' because it doesn't belong to a build target.
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/services/UserServiceImpl.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/services/UserServiceImpl.scala
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/models/services/UserServiceImpl.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/models/services/UserServiceImpl.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/models/services/UserServiceImpl.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/models/services/UserServiceImpl.scala' because it doesn't belong to a build target.
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/services/UserServiceImpl.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/services/UserServiceImpl.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/services/UserServiceImpl.scala
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/models/services/UserServiceImpl.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/models/services/UserServiceImpl.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/models/services/UserServiceImpl.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/models/services/UserServiceImpl.scala' because it doesn't belong to a build target.
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/services/UserServiceImpl.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/services/UserServiceImpl.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/services/UserServiceImpl.scala
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/models/services/UserService.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/models/services/UserService.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala' because it doesn't belong to a build target.
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala' because it doesn't belong to a build target.
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala' because it doesn't belong to a build target.
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/build.sbt
+WARN  no build target: 
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/services/UserService.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/services/UserServiceImpl.scala
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/models/services/UserServiceImpl.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/models/services/UserServiceImpl.scala' because it doesn't belong to a build target.
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/controllers/ActivateAccountController.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/controllers/ForgotPasswordController.scala
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/controllers/ForgotPasswordController.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/controllers/ForgotPasswordController.scala' because it doesn't belong to a build target.
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/services/AuthTokenService.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/services/AuthTokenService.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/services/AuthTokenServiceImpl.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/services/AuthTokenServiceImpl.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/AuthToken.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/AuthToken.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/daos/DBTableDefinitions.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/daos/AuthTokenDAOImpl.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/daos/AuthTokenDAO.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/daos/AuthTokenDAOImpl.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/controllers/ForgotPasswordController.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/forms/ForgotPasswordForm.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/controllers/ForgotPasswordController.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/forms/ResetPasswordForm.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/controllers/ResetPasswordController.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/controllers/ResetPasswordController.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignInController.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignInController.scala
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignInController.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignInController.scala' because it doesn't belong to a build target.
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/daos/AuthTokenDAOImpl.scala
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/models/daos/AuthTokenDAOImpl.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/models/daos/AuthTokenDAOImpl.scala' because it doesn't belong to a build target.
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/daos/AuthTokenDAOImpl.scala
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/models/daos/AuthTokenDAOImpl.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/models/daos/AuthTokenDAOImpl.scala' because it doesn't belong to a build target.
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/daos/AuthTokenDAO.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/daos/AuthTokenDAO.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/services/UserService.scala
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/models/services/UserServiceImpl.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/models/services/UserServiceImpl.scala' because it doesn't belong to a build target.
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/modules/SilhouetteModule.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/controllers/ResetPasswordController.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/controllers/ResetPasswordController.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/controllers/ResetPasswordController.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/controllers/ResetPasswordController.scala' because it doesn't belong to a build target.
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/forms/ResetPasswordForm.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/controllers/ResetPasswordController.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SocialAuthController.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/controllers/ForgotPasswordController.scala
+Jul 03, 2019 6:00:29 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1048
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/controllers/ForgotPasswordController.scala
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/controllers/ForgotPasswordController.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/controllers/ForgotPasswordController.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/controllers/ForgotPasswordController.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/controllers/ForgotPasswordController.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/controllers/ForgotPasswordController.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/controllers/ForgotPasswordController.scala' because it doesn't belong to a build target.
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignUpController.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignUpController.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SignUpController.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SocialAuthController.scala
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SocialAuthController.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SocialAuthController.scala' because it doesn't belong to a build target.
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SocialAuthController.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SocialAuthController.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SocialAuthController.scala
+Jul 03, 2019 6:15:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1314
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SocialAuthController.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SocialAuthController.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/models/User.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SocialAuthController.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SocialAuthController.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SocialAuthController.scala
+WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SocialAuthController.scala

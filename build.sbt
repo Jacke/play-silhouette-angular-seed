@@ -67,6 +67,7 @@ scalacOptions ++= Seq(
   "-Ywarn-inaccessible", // Warn about inaccessible types in method signatures.
   "-Ywarn-nullary-override", // Warn when non-nullary overrides nullary, e.g. def foo() over def foo.
   "-Ywarn-numeric-widen", // Warn when numerics are widened.
+  "-language:implicitConversions",
   // Play has a lot of issues with unused imports and unsued params
   // https://github.com/playframework/playframework/issues/6690
   // https://github.com/playframework/twirl/issues/105

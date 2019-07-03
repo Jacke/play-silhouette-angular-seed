@@ -77,14 +77,13 @@ class SignUpController @Inject() (
             /* user not already exists */
             val decorateFLname: Option[String] => String = n => n.getOrElse("")
             val user = User(
-              java.util.UUID.randomUUID(),
+              scala.util.Random.nextLong(),
               loginInfo,
               Some(signUp.firstName),
               Some(signUp.lastName),
               Some(signUp.firstName + " " + signUp.lastName),
               Some(signUp.email),
-              None,
-              true)
+              None)
             // val plainPassword = UUID.randomUUID().toString.replaceAll("-", "")
             val authInfo = passwordHasherRegistry.current.hash(signUp.password)
             for {

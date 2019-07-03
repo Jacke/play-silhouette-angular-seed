@@ -24,14 +24,17 @@ import com.mohiva.play.silhouette.persistence.repositories.{
   CacheAuthenticatorRepository,
   DelegableAuthInfoRepository
 }
+
 import com.mohiva.play.silhouette.api.StorableAuthenticator
 import com.mohiva.play.silhouette.api.util.CacheLayer
 import com.mohiva.play.silhouette.password.{ BCryptPasswordHasher, BCryptSha256PasswordHasher }
 import com.mohiva.play.silhouette.persistence.daos.{ DelegableAuthInfoDAO, InMemoryAuthInfoDAO }
 import com.mohiva.play.silhouette.persistence.repositories.DelegableAuthInfoRepository
 import com.typesafe.config.Config
-import models.daos._
+import dao._
 import models.services.{ UserService, UserServiceImpl }
+import models.daos._
+import services._
 import net.ceedubs.ficus.Ficus._
 import net.ceedubs.ficus.readers.ArbitraryTypeReader._
 import net.ceedubs.ficus.readers.ValueReader
@@ -45,7 +48,7 @@ import com.mohiva.play.silhouette.api.repositories.AuthenticatorRepository
 import scala.concurrent._
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.collection.mutable
-
+import scala.language.implicitConversions
 object Store {
   var data: mutable.HashMap[String, com.mohiva.play.silhouette.impl.authenticators.JWTAuthenticator] =
     mutable.HashMap()
@@ -135,8 +138,6 @@ class SilhouetteModule extends AbstractModule with ScalaModule {
     bind[Silhouette[DefaultEnv]].to[SilhouetteProvider[DefaultEnv]]
     bind[UnsecuredErrorHandler].to[CustomUnsecuredErrorHandler]
     bind[SecuredErrorHandler].to[CustomSecuredErrorHandler]
-    bind[UserService].to[UserServiceImpl]
-    bind[UserDAO].to[UserDAOImpl]
     bind[CacheLayer].to[PlayCacheLayer]
     bind[IDGenerator].toInstance(new SecureRandomIDGenerator())
     bind[FingerprintGenerator].toInstance(new DefaultFingerprintGenerator(false))
@@ -144,10 +145,13 @@ class SilhouetteModule extends AbstractModule with ScalaModule {
     bind[Clock].toInstance(Clock())
 
     // Replace this with the bindings to your concrete DAOs
-    bind[DelegableAuthInfoDAO[PasswordInfo]].toInstance(new InMemoryAuthInfoDAO[PasswordInfo])
+    bind[UserService].to[UserServiceImpl]
+    bind[DelegableAuthInfoDAO[PasswordInfo]].to[PasswordInfoDAOImpl]
     bind[DelegableAuthInfoDAO[OAuth1Info]].toInstance(new InMemoryAuthInfoDAO[OAuth1Info])
-    bind[DelegableAuthInfoDAO[OAuth2Info]].toInstance(new InMemoryAuthInfoDAO[OAuth2Info])
+    bind[DelegableAuthInfoDAO[OAuth2Info]].to[OAuth2InfoDAOImpl] //.toInstance(new InMemoryAuthInfoDAO[OAuth2Info])
+    bind[OAuth2InfoDAO].to[OAuth2InfoDAOImpl] //.toInstance(new InMemoryAuthInfoDAO[OAuth2Info])
     bind[DelegableAuthInfoDAO[OpenIDInfo]].toInstance(new InMemoryAuthInfoDAO[OpenIDInfo])
+
   }
 
   /**

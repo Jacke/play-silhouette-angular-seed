@@ -1,0 +1,43 @@
+# --- !Ups
+
+CREATE SEQUENCE user_id_seq;
+CREATE SEQUENCE login_info_id_seq;
+
+
+CREATE TABLE "user" (
+  ID BIGINT NOT NULL PRIMARY KEY DEFAULT nextval('user_id_seq'),
+  FIRST_NAME VARCHAR(255),
+  LAST_NAME VARCHAR(255),
+  EMAIL VARCHAR(255),
+  AVATAR_URL VARCHAR(255)
+);
+
+
+CREATE TABLE "login_info" (
+  ID BIGINT NOT NULL PRIMARY KEY DEFAULT nextval('login_info_id_seq'),
+  PROVIDER_ID VARCHAR(255) NOT NULL,
+  PROVIDER_KEY VARCHAR(255) NOT NULL
+);
+
+
+CREATE TABLE "user_login_info" (
+  USER_ID BIGINT NOT NULL,
+  LOGIN_INFO_ID BIGINT NOT NULL
+);
+
+CREATE TABLE "password_info" (
+  HASHER VARCHAR(255) NOT NULL,
+  PASSWORD VARCHAR(255) NOT NULL,
+  SALT VARCHAR(255),
+  LOGIN_INFO_ID BIGINT NOT NULL
+);
+
+
+# --- !Downs
+
+DROP TABLE "password_info";
+DROP TABLE "user_login_info";
+DROP TABLE "login_info";
+DROP TABLE "user";
+DROP SEQUENCE user_id_seq;
+DROP SEQUENCE login_info_id_seq;

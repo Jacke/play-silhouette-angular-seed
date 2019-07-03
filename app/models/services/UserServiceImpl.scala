@@ -1,76 +1,80 @@
 package models.services
 
-import java.util.UUID
 import javax.inject.Inject
 
 import com.mohiva.play.silhouette.api.LoginInfo
-import com.mohiva.play.silhouette.impl.providers.CommonSocialProfile
+import dao.DAOSlick
 import models.User
-import models.daos.UserDAO
+import play.api.db.slick.DatabaseConfigProvider
 
 import scala.concurrent.{ ExecutionContext, Future }
 
-/**
- * Handles actions to users.
- *
- * @param userDAO The user DAO implementation.
- * @param ex      The execution context.
- */
-class UserServiceImpl @Inject() (userDAO: UserDAO)(implicit ex: ExecutionContext) extends UserService {
+class UserServiceImpl @Inject() (
+  protected val dbConfigProvider: DatabaseConfigProvider)(
+  implicit
+  ex: ExecutionContext)
+  extends UserService
+  with DAOSlick {
 
-  /**
-   * Retrieves a user that matches the specified ID.
-   *
-   * @param id The ID to retrieve a user.
-   * @return The retrieved user or None if no user could be retrieved for the given ID.
-   */
-  def retrieve(id: UUID) = userDAO.find(id)
+  import profile.api._
 
-  /**
-   * Retrieves a user that matches the specified login info.
-   *
-   * @param loginInfo The login info to retrieve a user.
-   * @return The retrieved user or None if no user could be retrieved for the given login info.
-   */
-  def retrieve(loginInfo: LoginInfo): Future[Option[User]] = userDAO.find(loginInfo)
-
-  /**
-   * Saves a user.
-   *
-   * @param user The user to save.
-   * @return The saved user.
-   */
-  def save(user: User) = userDAO.save(user)
-
-  /**
-   * Saves the social profile for a user.
-   *
-   * If a user exists for this profile then update the user, otherwise create a new user with the given profile.
-   *
-   * @param profile The social profile to save.
-   * @return The user for whom the profile was saved.
-   */
-  def save(profile: CommonSocialProfile) = {
-    userDAO.find(profile.loginInfo).flatMap {
-      case Some(user) => // Update user with profile
-        userDAO.save(user.copy(
-          firstName = profile.firstName,
-          lastName = profile.lastName,
-          fullName = profile.fullName,
-          email = profile.email,
-          avatarURL = profile.avatarURL
-        ))
-      case None => // Insert a new user
-        userDAO.save(User(
-          userID = UUID.randomUUID(),
-          loginInfo = profile.loginInfo,
-          firstName = profile.firstName,
-          lastName = profile.lastName,
-          fullName = profile.fullName,
-          email = profile.email,
-          avatarURL = profile.avatarURL,
-          activated = true
-        ))
+  override def retrieve(loginInfo: LoginInfo): Future[Option[User]] = {
+    val userQuery = for {
+      dbLoginInfo <- loginInfoQuery(loginInfo)
+      dbUserLoginInfo <- userLoginInfos.filter(_.loginInfoId === dbLoginInfo.id)
+      dbUser <- users.filter(_.id === dbUserLoginInfo.userId)
+    } yield dbUser
+    db.run(userQuery.result.headOption).map { dbUserOption =>
+      dbUserOption.map { user =>
+        User(
+          user.id.getOrElse(0L),
+          loginInfo,
+          Some(user.firstName),
+          Some(user.email),
+          Some(user.firstName),
+          Some(user.lastName),
+          user.avatarURL)
+      }
     }
+  }
+
+  override def save(user: User): Future[User] = {
+    val dbUser = DBUser(
+      Some(user.userID),
+      user.firstName.getOrElse(""),
+      user.lastName.getOrElse(""),
+      user.email.getOrElse(""),
+      user.avatarURL)
+    val dbLoginInfo =
+      DBLoginInfo(None, user.loginInfo.providerID, user.loginInfo.providerKey)
+    // We don't have the LoginInfo id so we try to get it first.
+    // If there is no LoginInfo yet for this user we retrieve the id on insertion.
+    val loginInfoAction = {
+      val retrieveLoginInfo = loginInfos
+        .filter(
+          info =>
+            info.providerId === user.loginInfo.providerID &&
+              info.providerKey === user.loginInfo.providerKey
+        )
+        .result
+        .headOption
+      val insertLoginInfo = loginInfos
+        .returning(loginInfos.map(_.id))
+        .into((info, id) => info.copy(id = Some(id))) += dbLoginInfo
+      for {
+        loginInfoOption <- retrieveLoginInfo
+        loginInfo <- loginInfoOption
+          .map(DBIO.successful(_))
+          .getOrElse(insertLoginInfo)
+      } yield loginInfo
+    }
+    // combine database actions to be run sequentially
+    val actions = (for {
+      idValue <- (users returning users.map(_.id)).insertOrUpdate(dbUser)
+      loginInfo <- loginInfoAction
+      _ <- userLoginInfos += DBUserLoginInfo(idValue.get, loginInfo.id.get)
+    } yield ()).transactionally
+    // run actions and return user afterwards
+    db.run(actions).map(_ => user)
   }
 }

@@ -10,7 +10,7 @@ import models.services.UserService
 import play.api.i18n.{ I18nSupport, Messages }
 import play.api.mvc.{ AbstractController, AnyContent, ControllerComponents, Request }
 import utils.auth.DefaultEnv
-
+import models.User
 import scala.concurrent.{ ExecutionContext, Future }
 
 /**
@@ -47,7 +47,15 @@ class SocialAuthController @Inject() (
           case Left(result) => Future.successful(result)
           case Right(authInfo) => for {
             profile <- p.retrieveProfile(authInfo)
-            user <- userService.save(profile)
+            user <- userService.save(
+              User(
+                userID = scala.util.Random.nextLong(),
+                profile.loginInfo,
+                profile.email,
+                profile.firstName,
+                profile.lastName,
+                profile.firstName.flatMap(fName => profile.lastName.map(lName => fName + " " + lName)),
+                profile.avatarURL))
             authInfo <- authInfoRepository.save(profile.loginInfo, authInfo)
             authenticator <- silhouette.env.authenticatorService.create(profile.loginInfo)
             value <- silhouette.env.authenticatorService.init(authenticator)
