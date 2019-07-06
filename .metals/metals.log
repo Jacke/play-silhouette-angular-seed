@@ -429,3 +429,4 @@ WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/controll
 WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SocialAuthController.scala
 WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SocialAuthController.scala
 WARN  no build target: /Users/stan/Dev/play-silhouette-angular-seed/app/controllers/SocialAuthController.scala
+INFO  shutting down Metals
