@@ -1,7 +1,7 @@
 # --- !Ups
 
-CREATE TABLE "user" (
-  ID SERIAL PRIMARY KEY,
+CREATE TABLE user (
+  ID SERIAL,
   FIRST_NAME VARCHAR(255),
   LAST_NAME VARCHAR(255),
   EMAIL VARCHAR(255),
@@ -9,19 +9,19 @@ CREATE TABLE "user" (
 );
 
 
-CREATE TABLE "login_info" (
-  ID SERIAL PRIMARY KEY,
+CREATE TABLE login_info (
+  ID SERIAL,
   PROVIDER_ID VARCHAR(255) NOT NULL,
   PROVIDER_KEY VARCHAR(255) NOT NULL
 );
 
 
-CREATE TABLE "user_login_info" (
+CREATE TABLE user_login_info (
   USER_ID BIGINT NOT NULL,
   LOGIN_INFO_ID BIGINT NOT NULL
 );
 
-CREATE TABLE "password_info" (
+CREATE TABLE password_info (
   HASHER VARCHAR(255) NOT NULL,
   PASSWORD VARCHAR(255) NOT NULL,
   SALT VARCHAR(255),
@@ -31,9 +31,9 @@ CREATE TABLE "password_info" (
 
 # --- !Downs
 
-DROP TABLE "password_info";
-DROP TABLE "user_login_info";
-DROP TABLE "login_info";
-DROP TABLE "user";
+DROP TABLE password_info;
+DROP TABLE user_login_info;
+DROP TABLE login_info;
+DROP TABLE user;
 DROP SEQUENCE user_id_seq;
 DROP SEQUENCE login_info_id_seq;
