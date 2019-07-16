@@ -1,0 +1,6 @@
+#FileLock
+#Tue Jul 16 18:40:58 MSK 2019
+hostName=172.20.10.7
+id=16bfb71aa4b21939cc511a0d3ea8af127046f8b1ace
+method=file
+server=172.20.10.7\:64952
