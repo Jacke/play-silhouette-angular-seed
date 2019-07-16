@@ -69,7 +69,6 @@ class SignInController @Inject() (
       data => {
         val credentials = Credentials(data.email, data.password)
         credentialsProvider.authenticate(credentials).flatMap { loginInfo =>
-          val result = Redirect(routes.ApplicationController.index())
           userService.retrieve(loginInfo).flatMap {
             //case Some(user) if !user.activated =>
             //  Future.successful(Ok(views.html.activateAccount(data.email)))
@@ -84,8 +83,10 @@ class SignInController @Inject() (
                 case authenticator => authenticator
               }.flatMap { authenticator =>
                 silhouette.env.eventBus.publish(LoginEvent(user, request))
-                silhouette.env.authenticatorService.init(authenticator).flatMap { v =>
-                  silhouette.env.authenticatorService.embed(v, result)
+                silhouette.env.authenticatorService.init(authenticator).flatMap { token =>
+                  println(s"signIn action :: $token $user $request")
+                  silhouette.env.authenticatorService.embed(token, Ok(Json.toJson(Map("token" -> token))))
+
                 }
               }
             case None => Future.failed(new IdentityNotFoundException("Couldn't find user"))

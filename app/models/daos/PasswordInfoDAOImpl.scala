@@ -57,15 +57,16 @@ class PasswordInfoDAOImpl @Inject() (
    * @return The retrieved auth info or None if no auth info could be retrieved for the given login info.
    */
   override def find(loginInfo: LoginInfo): Future[Option[PasswordInfo]] = {
-    println(s"find: $loginInfo")
     db.run(passwordInfoQuery(loginInfo).result.headOption).map {
       dbPasswordInfoOption =>
-        dbPasswordInfoOption.map(
+        dbPasswordInfoOption.map {
           dbPasswordInfo =>
+            println(s"find: $loginInfo $dbPasswordInfo")
             PasswordInfo(
               dbPasswordInfo.hasher,
               dbPasswordInfo.password,
-              dbPasswordInfo.salt))
+              dbPasswordInfo.salt)
+        }
     }
   }
 
